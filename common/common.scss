@@ -3,7 +3,7 @@
 .custom-footer {
   display: flex;
   flex-wrap: wrap;
-  background-color: lighten($secondary, 50%);
+  background-color: darken($secondary, 20%);
   .flexbox {
     width: 100%;
     display: flex;
@@ -20,7 +20,7 @@
       display: block;
     }
     .blurb {
-      color: lighten($header_background, 10%);
+      color: darken($primary, 10%);
     }
   }
   .second-box {
@@ -63,17 +63,17 @@
           opacity: 1;
         }
         svg {
-          color: #3C2224;
-          fill: #3C2224;
+          color: $primary;
+          fill: $primary;
         }
         svg:hover {
-          color: $secondary;
-          fill: $secondary;
+          color: $tertiary;
+          fill: $tertiary;
         }
       }
     }
     .small-link {
-      color: $secondary-high;
+      color: $primary;
       margin: 0 0.25em;
       font-size: $font-down-2;
     }
@@ -87,8 +87,11 @@
     font-size: 17px;
   }
   .footer-section-link-wrapper a {
-    color: $header_background;
+    color: $primary;
     font-size: 14px;
+  }
+  .footer-section-link-wrapper a:hover {
+    color: $tertiary;
   }
   .list {
     margin: 1em;
