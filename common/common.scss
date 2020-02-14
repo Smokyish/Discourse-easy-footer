@@ -56,14 +56,19 @@
         justify-content: center;
 
         i {
-          fill: $secondary;
+          color: #3C2224;
           min-width: unset;
           margin: 0;
           font-size: $font-up-2;
           opacity: 1;
         }
-        i:hover {
-          fill: darken($secondary, 20%);
+        svg {
+          color: #3C2224;
+          fill: #3C2224;
+        }
+        svg:hover {
+          color: $secondary;
+          fill: $secondary;
         }
       }
     }
@@ -94,6 +99,7 @@
     opacity: 0.7;
     min-width: 16px;
     text-align: center;
+    font-size: 22px;
     &.fa-none {
       min-width: unset;
     }
