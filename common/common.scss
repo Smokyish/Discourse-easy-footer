@@ -3,7 +3,7 @@
 .custom-footer {
   display: flex;
   flex-wrap: wrap;
-  background: $primary;
+  background-color: lighten($secondary, 20%);
   .flexbox {
     width: 100%;
     display: flex;
@@ -62,6 +62,9 @@
           font-size: $font-up-2;
           opacity: 1;
         }
+        i:hover {
+          color: darken($secondary, 20%);
+        }
       }
     }
     .small-link {
@@ -74,10 +77,12 @@
     flex: 1;
   }
   .list span {
-    font-weight: bold;
+    font-weight: 300;
+    letter-spacing: -1px;
+    font-size: 17px;
   }
   .footer-section-link-wrapper a {
-    color: $secondary-high;
+    color: $header_background;
   }
   .list {
     margin: 1em;
