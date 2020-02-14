@@ -3,7 +3,7 @@
 .custom-footer {
   display: flex;
   flex-wrap: wrap;
-  background-color: darken($secondary, 10%);
+  background-color: darken($secondary, 6%);
   .flexbox {
     width: 100%;
     display: flex;
@@ -15,12 +15,13 @@
     max-width: 20%;
     .heading {
       font-size: $font-up-2;
-      font-weight: bold;
+      font-weight: 600;
       margin-bottom: 0.5em;
       display: block;
+      color: darken($primary, 20%);
     }
     .blurb {
-      color: darken($primary, 20%);
+      color: darken($primary, 25%);
     }
   }
   .second-box {
@@ -74,9 +75,12 @@
       }
     }
     .small-link {
-      color: darken($primary, 22%);
+      color: darken($primary, 25%);
       margin: 0 0.25em;
       font-size: $font-down-2;
+    }
+    .small-link:hover {
+      color: $tertiary;
     }
   }
   .footer-links {
