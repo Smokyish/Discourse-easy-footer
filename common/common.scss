@@ -3,7 +3,7 @@
 .custom-footer {
   display: flex;
   flex-wrap: wrap;
-  background-color: lighten($secondary, 20%);
+  background-color: lighten($secondary, 50%);
   .flexbox {
     width: 100%;
     display: flex;
@@ -20,7 +20,7 @@
       display: block;
     }
     .blurb {
-      color: $secondary-high;
+      color: lighten($header_background, 10%);
     }
   }
   .second-box {
@@ -56,14 +56,14 @@
         justify-content: center;
 
         i {
-          color: $secondary;
+          fill: $secondary;
           min-width: unset;
           margin: 0;
           font-size: $font-up-2;
           opacity: 1;
         }
         i:hover {
-          color: darken($secondary, 20%);
+          fill: darken($secondary, 20%);
         }
       }
     }
@@ -83,6 +83,7 @@
   }
   .footer-section-link-wrapper a {
     color: $header_background;
+    font-size: 14px;
   }
   .list {
     margin: 1em;
